@@ -21,6 +21,7 @@ header{
     flex-direction: column;
     align-items: center;
     background-color: var(--color-white);
+    box-shadow: 0px 3px 6px #00000029;
 }
 
 .container{
@@ -38,8 +39,8 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0px 3px 6px #00000029;
-    padding: 0 136px;
+    /*box-shadow: 0px 3px 6px #00000029;*/
+    /*padding: 0 136px;*/
 
 
 }
@@ -49,6 +50,7 @@ header{
     letter-spacing: 0px;
     color: var(--color-primary);
     opacity: 1;
+    cursor: pointer;
 }
 .navbar__list{
     display: flex;
@@ -117,6 +119,7 @@ header{
     box-shadow: 5px 10px 14px #07ACE629;
     border-radius: 40px;
     opacity: 1;
+    cursor: pointer;
 }
 .welcome-screen__banner{
     align-self: flex-end;
@@ -136,17 +139,127 @@ header{
     color: var(--color-black);
     opacity: 1;
 }
+.stats__section-content{
+    padding: 0 200px;
+    margin-top: 100px;
+    margin-bottom: 120px;
+    display: flex;
+    justify-content: space-between;
+}
+
 .circle{
     width: 63px;
     height: 63px;
     border-radius: 50%;
 }
+
 .first__circle{
     background-color: var(--color-redish);
+    position: relative;
+
 }
 .second__circle{
-    background-color:var(--color-primary) ;
+    background-color:var(--color-primary);
+    position: relative;
 }
 .third__circle{
     background-color: var(--color-green);
+    position: relative;
+}
+.first__circle:after{
+    content: url("../images/Person.svg");
+    position: absolute;
+    left: 30px;
+}
+.second__circle:after{
+    content: url("../images/Eye.svg");
+    position: absolute;
+    left: 23px;
+    top: 10px;
+}
+.third__circle:after{
+    content: url("../images/Catalog.svg");
+    position: absolute;
+    left: 30px;
+    top: 5px;
+}
+.stats__column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.stats__column h3{
+    margin: 14px 0 19px 0;
+    text-align: center;
+    font: normal normal 800 20px/24px Raleway;
+    letter-spacing: 5.96px;
+    color: var(--color-black);
+    opacity: 1;
+}
+.stats__column p{
+    text-align: center;
+    font: normal normal normal 16px/19px Raleway;
+    letter-spacing: 0px;
+    color: var(--color-grey);
+    opacity: 1;
+}
+
+/*BENEFITS*/
+
+.benefits__section{
+    padding: 0 200px;
+    background-color: var(--color-light-grey);
+}
+.benefits__container{
+    background-color: var(--color-white);
+}
+.benefits__container h2{
+    text-align: left;
+    font: normal normal normal 36px/42px Raleway;
+    letter-spacing: 0px;
+    color: var(--color-black);
+    opacity: 1;
+}
+.benefits__container p{
+    text-align: left;
+    font: normal normal normal 16px/22px Open Sans;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+}
+.first__container{
+    display: flex;
+
+}
+.image__container{
+    margin-top: 100px;
+    position: relative;
+    margin-bottom: 40px;
+
+}
+.first__image{
+    background: url("../images/Macbook.png");
+    width: 386px;
+    height: 219px;
+    background-position: center;
+    background-size: contain;
+    position: relative;
+    z-index: 2;
+
+}
+.image__container::after{
+    content: "";
+    border-radius: 41px;
+    width: 180px;
+    height: 180px;
+    /*transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);*/
+    transform: rotate(45deg);
+    opacity: 1;
+    position: absolute;
+    background-color: var(--color-redish);
+    z-index: 0;
+    bottom: 90px;
+    left: 225px;
+
+
 }
