@@ -207,11 +207,24 @@ header{
 /*BENEFITS*/
 
 .benefits__section{
-    padding: 0 200px;
+    padding: 105px;
     background-color: var(--color-light-grey);
+}
+.benefits__section .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .benefits__container{
     background-color: var(--color-white);
+    margin-bottom: 40px;
+    border: solid 1px #E8E9ED;
+    border-radius: 5px;
+    width: 1152px;
+}
+.benefits__container:last-child{
+    border: none;
+    margin-bottom: 0;
 }
 .benefits__container h2{
     text-align: left;
@@ -219,6 +232,8 @@ header{
     letter-spacing: 0px;
     color: var(--color-black);
     opacity: 1;
+    margin-bottom: 30px;
+
 }
 .benefits__container p{
     text-align: left;
@@ -229,12 +244,15 @@ header{
 }
 .first__container{
     display: flex;
+    justify-content: space-between;
+
 
 }
-.image__container{
+.first-image__container{
     margin-top: 100px;
     position: relative;
     margin-bottom: 40px;
+    margin: 100px 120px 40px 0;
 
 }
 .first__image{
@@ -247,7 +265,7 @@ header{
     z-index: 2;
 
 }
-.image__container::after{
+.first-image__container::after{
     content: "";
     border-radius: 41px;
     width: 180px;
@@ -261,5 +279,110 @@ header{
     bottom: 90px;
     left: 225px;
 
+}
+.first-text__container{
+    margin: 90px 0 30px 30px;
+    max-width: 420px;
+    position: relative;
+}
+.first-text__container::after{
+    content:"";
+    width: 328px;
+    height: 4px;
+    background-color: var(--color-redish);
+    position: absolute;
+    bottom: 55px
+}
+.second-text__container{
+    margin: 69px 30px 30px 0;
+    max-width: 400px;
+}
+.second-text__container::after{
+    content:"";
+    width: 328px;
+    height: 4px;
+    background-color: var(--color-primary);
+    position: absolute;
+    bottom: 65px
+}
+.second-image__container{
+    background: url("../images/iPhone.png");
+    width: 426px;
+    height: 328px;
+    background-position: center;
+    background-size: contain;
+    position: relative;
+    z-index: 2;
+}
+.second__container{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.second-image__container{
+    margin: 30px 0 15px 70px;
 
+}
+.second__container::after{
+    content: "";
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: var(--color-primary);
+    z-index: 0;
+    bottom: 30px;
+    left: 60px;
+}
+.third__container{
+    display: flex;
+
+    justify-content: space-between;
+    background: var(--color-light-grey);
+}
+.first__part{
+    background-color: var(--color-white);
+    position: relative;
+    max-width: 620px;
+    height: 370px;
+    border: solid 1px #E8E9ED;
+    border-radius: 5px;
+}
+.second__part{
+
+    height: 370px;
+    max-width: 440px;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-green);
+    align-self: flex-end;
+    margin-left: 60px;
+    padding: 45px 0;
+
+
+}
+.third-text__container{
+    max-width: none;
+    margin: 70px 35px;
+
+}
+.third-image__container{
+    background: url("../images/Trumpet.png");
+    width: 296px;
+    height: 208px;
+    background-size: contain;
+    background-position: center;
+}
+.third-text__container::after{
+    content:"";
+    width: 328px;
+    height: 4px;
+    background-color: var(--color-green);
+    position: absolute;
+    bottom: 70px;
+}
+.benefits__container p:last-child{
+    margin-bottom: 40px;
 }
