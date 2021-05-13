@@ -386,3 +386,143 @@ header{
 .benefits__container p:last-child{
     margin-bottom: 40px;
 }
+
+/*PRICING*/
+
+
+.pricing__title{
+    text-align: center;
+    font: normal normal normal 36px/42px Raleway;
+    letter-spacing: 0px;
+    color: var(--color-black);
+    opacity: 1;
+    margin-top: 100px;
+    margin-bottom: 70px;
+}
+.boxes{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 150px;
+}
+.box{
+
+    border-radius: 18px;
+    opacity: 1;
+    width: 370px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.box h3{
+    font: normal normal bold 20px/1px Raleway;
+    letter-spacing: 0px;
+    color: var(--color-black);
+    opacity: 1;
+    margin-top: 34px;
+
+}
+.box h4{
+    text-align: left;
+    font: normal normal 300 46px/2px Open Sans;
+    letter-spacing: 0px;
+    /*color: var(--color-redish);*/
+    opacity: 1;
+    margin-bottom: 90px;
+    margin-top: 50px;
+}
+.box:nth-child(1) h4{
+    color: var(--color-redish);
+}
+.box:nth-child(2) h4{
+    color: var(--color-primary);
+}
+.box:nth-child(3) h4{
+    color: var(--color-green);
+}
+.box p{
+    text-align: center;
+    font: normal normal normal 14px/41px Open Sans;
+    letter-spacing: 0px;
+    color: var(--color-black);
+    opacity: 1;
+    margin-bottom: 20px;
+}
+.box p:nth-child(7){
+    margin-bottom: 55px;
+}
+.include::before{
+    content: url("../images/Ckechmark-1.svg");
+    width: 5px;
+    height: 5px;
+    margin-right: 13px;
+}
+.include--not::before{
+    content: url("../images/Close.svg");
+    width: 5px;
+    height: 5px;
+    margin-right: 13px;
+}
+.basic{
+    border: 1px solid #FB3B64;
+}
+.professional{
+    border: 1px solid var(--color-primary);
+    transform: scale(1.1);
+    box-shadow: 5px 10px 27px #07ACE629;
+}
+.premium{
+    border: 1px solid var(--color-green);
+}
+.btn{
+    width: 150px;
+    height: 50px;
+    border-radius: 23px;
+    color: var(--color-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    position: relative;
+    bottom: -25px;
+}
+.basic .btn{
+    background-color: var(--color-redish);
+}
+.professional .btn{
+    background-color: var(--color-primary);
+
+}
+.premium .btn{
+    background-color: var(--color-green);
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+
+}
+.form__content{
+    display: flex;
+    justify-content: space-between;
+    width: 900px;
+}
+.contact{
+    margin-right: 100px;
+}
+.contact h2{
+    text-align: left;
+    font: normal normal normal 49px/57px Raleway;
+    letter-spacing: 0px;
+    color: var(--color-black);
+    opacity: 1;
+}
+.contact p{
+    text-align: left;
+    font: normal normal normal 16px/22px Open Sans;
+    letter-spacing: 0px;
+    color: var(--color-black);
+    opacity: 1;
+}
+.contact-form{
+    display: flex;
+    flex-direction: column;
+}
