@@ -484,6 +484,8 @@ header{
     box-sizing: border-box;
     position: relative;
     bottom: -25px;
+    cursor: pointer;
+    text-decoration: none;
 }
 .basic .btn{
     background-color: var(--color-redish);
@@ -504,6 +506,7 @@ header{
     display: flex;
     justify-content: space-between;
     width: 900px;
+    margin-bottom: 60px;
 }
 .contact{
     margin-right: 100px;
@@ -514,6 +517,7 @@ header{
     letter-spacing: 0px;
     color: var(--color-black);
     opacity: 1;
+    margin-bottom: 22px;
 }
 .contact p{
     text-align: left;
@@ -521,8 +525,174 @@ header{
     letter-spacing: 0px;
     color: var(--color-black);
     opacity: 1;
+    margin-bottom: 42px;
 }
 .contact-form{
     display: flex;
     flex-direction: column;
+    width: 440px;
+}
+.form__label{
+    text-align: left;
+    font: normal normal bold 11px/15px Open Sans;
+    letter-spacing: 3.28px;
+    color: var(--color-primary);
+    opacity: 1;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+.inputs{
+    border: none;
+    border-bottom: 2px solid var(--color-grey);
+    margin-bottom: 30px;
+    line-height: 2.625rem
+}
+.checkbox {
+    display: flex;
+    position: relative;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+.checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: var(--color-white);
+    border: 1px solid var(--color-grey);
+    border-radius: 3px;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+
+.checkbox input:checked ~ .checkmark:after {
+    display: block;
+}
+
+
+.checkbox .checkmark:after {
+    left: 8px;
+    top: 4px;
+    width: 5px;
+    height: 10px;
+    border: solid var(--color-primary);
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.checkbox p{
+    margin-left: 40px;
+    text-align: left;
+    font: normal normal normal 12px/17px Open Sans;
+    letter-spacing: 0px;
+    color: #707070;
+    opacity: 1;
+}
+.send-btn{
+    background: var(--color-primary) 0% 0% no-repeat padding-box;
+    box-shadow: 5px 10px 14px #07ACE629;
+    border-radius: 35px;
+    opacity: 1;
+    border: none;
+    width: 226px;
+    height: 57px;
+    color: var(--color-white);
+    font: normal normal bold 13px/18px Open Sans;
+    letter-spacing: 0px;
+    align-self: flex-end;
+}
+.letter{
+    width: 27px;
+    height: 27px;
+    background: url("../images/Mail-Icon.svg");
+    /*position: relative;*/
+}
+.letter::after{
+    content: "info@bestshop.xyz";
+    text-align: left;
+    font: normal normal 600 16px/22px Open Sans;
+    letter-spacing: 0px;
+    color: var(--color-grey);
+    opacity: 1;
+    position: absolute;
+    left: 35px;
+
+}
+.phone{
+    width: 27px;
+    height: 27px;
+    background: url("../images/Phone-Icon.svg");
+    margin-left: 175px;
+    margin-right: 230px;
+    /*position: relative;*/
+}
+.phone::after{
+    content: "123 456 789";
+    text-align: left;
+    font: normal normal 600 16px/22px Open Sans;
+    letter-spacing: 0px;
+    color: var(--color-grey);
+    opacity: 1;
+    position: absolute;
+    right: 135px;
+}
+.icons{
+    display: flex;
+    position: relative;
+}
+
+/*FOOTER*/
+footer{
+    box-shadow: 0px -5px 40px #00000029;
+}
+.footer__container{
+    display: flex;
+    justify-content: space-between;
+    padding: 17px 0 20px 0;
+}
+.footer__container h2{
+    text-align: left;
+    font: normal normal 300 26px/30px Raleway;
+    letter-spacing: 0px;
+    color: var(--color-primary);
+    opacity: 1;
+    margin-bottom: 6px;
+}
+.footer__container p{
+    text-align: left;
+    font: normal normal normal 11px/15px Open Sans;
+    letter-spacing: 0px;
+    color: var(--color-grey);
+    opacity: 1;
+}
+.footer_right{
+    display: flex;
+    align-items: center;
+}
+.facebook{
+    background: url("../images/Facebook.svg");
+    width: 24px;
+    height: 24px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.twitter{
+    background: url("../images/Twitter.svg");
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
 }
